@@ -1,11 +1,16 @@
 name: Custom Input 
 description: Practice workflow to test custom input
 on:
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
-      name:
-        type: string
-        description: Enter any name
+      branch:
+        description: "Branch to run the workflow on"
+        required: false
+        default: main
+        
 jobs:
   Development:
     name: This joib is for dev
