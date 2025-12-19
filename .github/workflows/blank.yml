@@ -1,7 +1,7 @@
 name: Custom Input 
 description: Practice workflow to test custom input
 on:
-  pull_request:
+  push:
     branches:
       - main
   workflow_dispatch:
